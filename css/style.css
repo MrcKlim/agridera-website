@@ -1,0 +1,16 @@
+/* --- Глобальні стилі та шрифти --- */
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+         url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}

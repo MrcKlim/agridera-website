@@ -1,0 +1,49 @@
+/* --- Підвал --- */
+.footer-section {
+    color: #ffffff;
+    padding: 0 !important; 
+}
+
+.footer-top {
+    background-color: #2d3f45; 
+}
+
+.footer-bottom {
+    background-color: #324950; 
+}
+
+.footer-nav a {
+    color: #ffffff;
+    font-size: 11px;
+    text-decoration: none;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.footer-nav a:hover {
+    color: #4CAF50;
+}
+
+.copyright-text {
+    font-size: 10px;
+    color: #8c9c94;
+    letter-spacing: 0.5px;
+}
+
+/* Іконки соцмереж */
+.social-icons a {
+    display: inline-block;
+    margin-left: 8px; 
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 26px; 
+    height: 26px;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); 
+}

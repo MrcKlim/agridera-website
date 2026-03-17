@@ -1,0 +1,140 @@
+/* --- Іконки культур --- */
+.icons-section {
+    background-color: #ffffff;
+}
+
+.icon-box {
+    min-width: 120px;
+    padding-top: 15px;
+}
+
+.icon-img {
+    height: 45px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon-text {
+    font-size: 11px;
+    font-weight: 600;
+    color: #4a5c54;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* --- Vision & Mission --- */
+.vision-mission-section {
+    background-color: #f2f4f3;
+    background-image: url('../images/Union.png');
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    background-size: 100% auto;
+    position: relative;
+    z-index: 1;
+}
+
+.vision-mission-section .row:last-child .order-md-2 {
+    transform: translateX(50px);
+}
+
+.section-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #3b5046;
+    font-size: 40px; 
+    margin-bottom: 5px;
+}
+
+/* --- Картинка з хрестиками --- */
+.crosses-img {
+    height: 10px; 
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.section-text {
+    font-size: 16px; 
+    line-height: 1.8;
+    color: #555;
+    max-width: 95%;
+}
+
+/* --- Кнопка Play --- */
+.mission-img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.play-btn::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 16px solid #579859; 
+    margin-left: 5px;
+}
+
+.play-btn:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+/* --- Третій блок --- */
+.activities-section {
+    background-color: #f1f3f2 !important; 
+}
+
+.activities-section img.mb-3 {
+    height: 180px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 3px;
+}
+
+.activity-title {
+    color: #579859;
+    font-size: 20px; 
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    min-height: 45px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-divider {
+    width: 50px;
+    border-top: 2px solid #aec2b4;
+    margin: 10px auto 15px auto;
+}
+
+.activity-desc {
+    font-size: 15px; 
+    color: #4a5c54;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
