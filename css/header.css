@@ -13,6 +13,12 @@
     padding-bottom: 0;
 }
 
+/* Білий фон для сторінок (tomato) */
+.header-white {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e8eeeb;
+}
+
 .logo-img {
     max-height: 55px;
 }

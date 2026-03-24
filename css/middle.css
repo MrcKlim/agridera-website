@@ -101,7 +101,6 @@
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-
 /* --- Третій блок --- */
 .activities-section {
     background-color: #f1f3f2 !important; 
@@ -137,4 +136,155 @@
     color: #4a5c54;
     line-height: 1.6;
     margin-bottom: 0;
+}
+
+/* ========================================= */
+/* СТИЛІ ДЛЯ TOMATO ALL                      */
+/* ========================================= */
+
+.tomato-page {
+    background-color: #FDF2F0 !important;
+}
+
+.tomato-banner {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.tomato-banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.page-title {
+    color: #3b5046;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.tomato-page main img.crosses-img {
+    height: 10px;
+    width: auto;
+    display: block;
+    margin-top: 25px; 
+    margin-bottom: 25px;
+}
+
+.desc-text {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.highlight-box {
+    border-left: 3px solid #db7d7d; 
+    background-color: transparent; 
+    padding: 5px 0 5px 20px; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: none; 
+}
+
+.highlight-box p {
+    font-size: 15px;
+    font-weight: 500; 
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.info-columns {
+    background-color: #FFFFFF; 
+    padding: 30px 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.info-card {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    height: 100%; 
+}
+
+.info-columns h5 {
+    color: #3b5046;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.info-columns .green-hr {
+    border-top: 2px solid #000000; 
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+.info-columns p {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* PRODUCT GRID */
+.product-grid-section {
+    background-color: transparent;
+    padding: 0px;
+}
+
+.product-card {
+    background-color: transparent;
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    background-color: transparent;
+    display: block;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-info {
+    padding: 14px 16px 18px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.product-title {
+    color: #579859 !important;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.product-desc {
+    font-size: 12px;
+    color: #579859;
+    margin-bottom: 0;
+}
+
+.product-card.no-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 250px; 
 }
