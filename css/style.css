@@ -1,8 +1,7 @@
 /* --- Глобальні стилі та шрифти --- */
 @font-face {
     font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Bold.woff') format('woff'),
-         url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    src: url('../fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
