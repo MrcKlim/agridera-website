@@ -412,3 +412,162 @@
     background-color: #579859;
     color: #ffffff;
 }
+
+/* ========================================= */
+/* СТИЛІ ДЛЯ СТОРІНКИ CONTACT                */
+/* ========================================= */
+ 
+.contact-page {
+    background-color: #f2f4f3;
+}
+ 
+.contact-banner {
+    width: 100%;
+}
+ 
+.contact-banner img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+ 
+.contact-section {
+    background-color: #f2f4f3;
+}
+ 
+.contact-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #3b5046;
+    margin-bottom: 5px;
+}
+ 
+.contact-label {
+    font-size: 13px;
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+    color: #3b5046;
+    margin-bottom: 4px;
+    display: block;
+}
+ 
+.required {
+    color: #d9534f;
+}
+ 
+.contact-input {
+    border: 1px solid #cdd8d3;
+    border-radius: 4px !important; 
+    background-color: #ffffff;
+    font-size: 13px;
+    font-family: Arial, sans-serif; 
+    height: 36px;
+    padding: 4px 14px;
+    color: #333;
+    box-shadow: none !important;
+}
+ 
+.contact-input:focus {
+    border-color: #579859; 
+    outline: none;
+}
+ 
+.contact-select {
+    height: 36px;
+    padding: 4px 14px;
+    appearance: auto;
+    border-radius: 4px !important; 
+    font-family: Arial, sans-serif; 
+}
+ 
+.contact-textarea {
+    height: 260px !important;
+    resize: vertical;
+    border-radius: 4px !important; 
+    font-family: Arial, sans-serif; 
+}
+ 
+/* Captcha */
+.captcha-img {
+    height: 34px;
+    width: auto;
+    border: 1px solid #cdd8d3;
+    background: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+ 
+.captcha-input {
+    max-width: 120px;
+}
+ 
+.send-btn {
+    background-color: #579859; 
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+    padding: 6px 24px;
+    border-radius: 25px !important; 
+    border: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    height: 36px;
+    transition: 0.3s;
+}
+ 
+.send-btn:hover {
+    background-color: #3b5046;
+    color: #ffffff;
+}
+ 
+.address-block {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 35px 20px 40px;
+    margin-top: 40px;
+}
+ 
+.address-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    color: #579859; 
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: inline-block;
+    border-bottom: 2px solid #579859; 
+    padding-bottom: 6px;
+    min-width: 170px;
+}
+ 
+.address-text {
+    font-size: 14px;
+    font-family: Arial, sans-serif; 
+    font-weight: normal;
+    color: #555555;
+    line-height: 1.8;
+}
+ 
+.address-phone {
+    color: #579859; 
+    text-decoration: none;
+}
+ 
+.address-phone:hover {
+    text-decoration: underline;
+}
+
+/* --- Перевірка E-mail --- */
+input[type="email"]:invalid:not(:placeholder-shown) {
+    border-color: #d9534f !important; 
+    color: #d9534f !important; 
+    background-color: #fff0f0; 
+}
+
+input[type="email"]:valid:not(:placeholder-shown) {
+    border-color: #579859 !important; 
+    color: #3b5046 !important;
+}
