@@ -104,22 +104,28 @@
 @media (max-width: 768px) {
     .contact-page .form-group .d-flex {
         flex-wrap: wrap !important;
+        gap: 10px !important; 
     }
     
     .captcha-img {
-        flex: 0 0 auto !important;
+        flex: 0 0 110px !important; 
+        width: 110px !important; 
         height: 38px !important; 
+        object-fit: contain; 
+        padding: 4px !important;
     }
     
     .captcha-input {
-        flex: 1 !important; 
-        max-width: 100% !important;
+        flex: 1 1 auto !important; 
+        width: 100% !important; 
+        max-width: calc(100% - 120px) !important; 
     }
     
     .send-btn {
         flex: 0 0 100% !important; 
+        width: 100% !important; 
         height: 42px !important; 
-        margin-top: 4px !important;
+        margin-top: 5px !important;
     }
 }
 
