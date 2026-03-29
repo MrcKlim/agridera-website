@@ -1,0 +1,128 @@
+/* ========================================= */
+/* Адаптивний дизайн                         */
+/* ========================================= */
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+    
+    .hamburger-menu span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #579859;
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+
+    .hamburger-menu.active span:nth-child(1) { transform: translateY(9.5px) rotate(45deg); }
+    .hamburger-menu.active span:nth-child(2) { opacity: 0; }
+    .hamburger-menu.active span:nth-child(3) { transform: translateY(-9.5px) rotate(-45deg); }
+
+    .main-nav {
+        display: none !important; 
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 15px 0;
+        margin-top: 15px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+    }
+
+    .main-nav.show {
+        display: flex !important; 
+    }
+
+    .main-nav a {
+        margin: 12px 0;
+        font-size: 16px;
+    }
+
+    .search-box { margin-bottom: 0; }
+}
+
+@media (max-width: 768px) {
+    .section-title { font-size: 30px; }
+    .page-title { font-size: 28px; }
+    .contact-title { font-size: 28px; }
+    .product-title-large { font-size: 26px; }
+    .product-subtitle-large { font-size: 20px; }
+
+    .search-box input { width: 100%; max-width: 250px; }
+    
+    .footer-nav { text-align: center; margin-bottom: 15px; }
+    .footer-nav a { display: inline-block; margin: 5px 10px; }
+    .social-icons { text-align: center !important; }
+
+    .vision-mission-section .row:last-child .order-md-2 {
+        transform: none; 
+        margin-top: 20px;
+    }
+
+    .tomato-banner img, .contact-banner { height: 180px !important; }
+}
+
+@media (max-width: 640px) {
+    .logo-img { max-height: 45px; }
+    .char-lined-title { width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .section-title { font-size: 26px; }
+    .btn-send-message, .btn-send { width: 100%; } /* Кнопка на всю ширину */
+    .info-columns { padding: 15px 10px; }
+}
+
+@media (max-width: 400px) {
+    .contact-banner h1 { font-size: 28px; }
+    .product-card img { height: auto; aspect-ratio: 4/3; } /* Щоб фото томатів не сплющувались */
+}
+
+@media (max-width: 320px) {
+    .section-title { font-size: 22px; }
+    .page-title { font-size: 22px; }
+    .search-box input { max-width: 180px; }
+}
+
+/* ========================================= */
+/* Горизонтальний скролл                     */
+/* ========================================= */
+@media (max-width: 768px) {
+    .icons-section .row {
+        justify-content: flex-start !important; 
+        flex-wrap: nowrap !important; 
+        overflow-x: auto !important; 
+        -webkit-overflow-scrolling: touch; 
+        padding-bottom: 10px; 
+    }
+
+    .icons-section .row::-webkit-scrollbar {
+        height: 4px; 
+    }
+    .icons-section .row::-webkit-scrollbar-thumb {
+        background-color: #579859; 
+        border-radius: 4px;
+    }
+
+    .icons-section .icon-box {
+        flex: 0 0 auto; 
+        width: 110px; 
+    }
+}

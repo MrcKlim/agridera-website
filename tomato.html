@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/middle.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body class="tomato-page">
 
@@ -20,21 +21,28 @@
                             <img src="images/logo.png" alt="Agridera Logo" class="img-fluid logo-img">
                         </a>
                     </div>
-                    <div class="col-md-9">
-                        <div class="d-flex justify-content-md-end justify-content-center mb-2">
-                            <div class="search-box">
-                                <input type="text" placeholder="Search">
-                                <img src="images/ico_search.png" alt="Search" class="search-icon-img">
-                            </div>
+                    <div class="col-md-9 position-relative">
+                    <div class="d-flex justify-content-between justify-content-md-end align-items-center mb-2">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search">
+                            <img src="images/ico_search.png" alt="Search" class="search-icon-img">
                         </div>
-                        <nav class="main-nav d-flex justify-content-md-end justify-content-center flex-wrap">
-                            <a href="index.html">Home</a>
-                            <a href="#">Company Profile</a>
-                            <a href="tomato.html">Products</a> <a href="#">Services</a>
-                            <a href="#">R & D</a>
-                            <a href="contact.html">Contact</a>
-                        </nav>
+                        
+                        <div class="hamburger-menu" id="hamburger" onclick="this.classList.toggle('active'); document.getElementById('nav-menu').classList.toggle('show');">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
+                    
+                    <nav class="main-nav d-flex justify-content-md-end justify-content-center flex-wrap" id="nav-menu">
+                        <a href="index.html">Home</a>
+                        <a href="#">Company Profile</a>
+                        <a href="tomato.html">Products</a> 
+                        <a href="#">Services</a>
+                        <a href="#">R & D</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
                 </div>
             </div>
         </header>
