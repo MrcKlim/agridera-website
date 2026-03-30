@@ -3,8 +3,8 @@ var app = new Vue({
     data: {
         products: [
             {id: 1, title: 'White Cabbage', short_text: 'Fresh and crispy white cabbage', image: 'cab1.png', desc: 'Full description of white cabbage...'},
-            {id: 2, title: 'Red Cabbage', short_text: 'Vibrant red cabbage, rich in vitamins', image: 'cab2.png', desc: 'Full description of red cabbage...'},
-            {id: 3, title: 'Savoy Cabbage', short_text: 'Textured savoy cabbage leaves', image: 'cab3.png', desc: 'Full description of savoy cabbage...'},
+            {id: 2, title: 'Green Cabbage', short_text: 'Classic green cabbage, rich in vitamins', image: 'cab2.png', desc: 'Full description of green cabbage...'},
+            {id: 3, title: 'Cauliflower', short_text: 'Tender cauliflower with mild flavor', image: 'cab3.png', desc: 'Full description of cauliflower...'},
             {id: 4, title: 'Napa Cabbage', short_text: 'Sweet Chinese cabbage', image: 'cab4.png', desc: 'Full description of napa cabbage...'},
             {id: 5, title: 'Brussels Sprouts', short_text: 'Nutritious miniature cabbages', image: 'cab5.png', desc: 'Full description of brussels sprouts...'}
         ],
