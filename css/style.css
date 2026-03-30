@@ -30,7 +30,6 @@ img {
     display: block;
 }
 
-.container,
 .container-fluid {
     max-width: 100%;
     padding-left: 15px;
