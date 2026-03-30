@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAG 1002 (TAG 809) - Agridera</title>
+    <title>Product Details - Agridera</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/middle.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body class="product-one-page">
 
@@ -48,14 +51,14 @@
         </div>
     </header>
 
-    <main class="product-details-main py-4">
+    <main id="app" class="product-details-main py-4">
         <div class="container position-relative">
-            <a href="tomato.html" class="back-link mb-3 d-inline-block">&larr; Return to all tomatoes</a>
+            <a href="tomato.html" class="back-link mb-3 d-inline-block">&larr; Return to all products</a>
 
             <div class="row">
-                <div class="col-md-6 pr-md-5">
-                    <h1 class="product-title-large">TAG 1002 (TAG 809)</h1>
-                    <h2 class="product-subtitle-large">Tomato Determinate Red Standard Round</h2>
+                <div class="col-md-6 pr-md-5 d-md-flex flex-md-column">
+                    <h1 class="product-title-large">{{ product.title }}</h1>
+                    <h2 class="product-subtitle-large">{{ product.short_text }}</h2>
                     
                     <img src="images/Union.svg" alt="Crosses" class="crosses-img mt-3 mb-4">
 
@@ -64,7 +67,7 @@
                         <span class="highlight-red-text">Very high yield and<br>excellent fruits quality!</span>
                     </div>
 
-                    <h3 class="char-lined-title">CHARACTERISTICS</h4>
+                    <h3 class="char-lined-title">{{ product.desc }}</h3>
                     <div class="char-block mb-4">
                         <h4 class="char-label">Resistance</h4>
                         <p class="char-text mb-0">HR: ToMV:0-2; Fol: 1,2; Ve/Vd;<br>IR: TYLCV</p>
@@ -89,25 +92,36 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <img src="images/tag1002.png" alt="TAG 1002" class="img-fluid main-product-image mb-0">
+                <div class="col-md-6 d-md-flex flex-md-column">
+                    <img :src="'img/' + product.image" :alt="product.title" class="img-fluid main-product-image mb-0">
                     
-                    <div class="d-flex justify-content-end mb-2">
-                        <a href="#" class="btn btn-download-pdf d-flex align-items-center">
-                            <img src="images/ico_pdf.png" alt="PDF" class="mr-2" style="height: 20px;"> Download PDF
+                    <div class="d-flex justify-content-end mb-4 mt-3">
+                        <a href="#" class="btn btn-download-pdf d-flex align-items-center" 
+                           @click.prevent="addToCart(product.id)" 
+                           v-if="btnVisible == 0">
+                            Add to cart
+                        </a>
+
+                        <a href="contact.html" class="btn btn-download-pdf d-flex align-items-center" 
+                           v-if="btnVisible == 1" 
+                           style="background-color: #3b5046; color: white;">
+                            Go to cart
                         </a>
                     </div>
-                    <div class="mb-4">
+
+                    <div class="mt-md-auto">
+                        <div class="mb-4">
                         <h4 class="char-lined-title">Cycle</h4>
                         <ul class="char-list">
                             <li>Spring</li>
                             <li>Fall</li>
                             <li>Winter</li>
                         </ul>
-                    </div>
-                    <div class="mb-4">
-                        <h4 class="char-lined-title">Color</h4>
-                        <p class="char-text">Red</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="char-lined-title">Color</h4>
+                            <p class="char-text">Red</p>
+                        </div>
                     </div>
                 </div>
             </div>

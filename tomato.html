@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomato Hybrids - Agridera</title>
+    <title>Cabbage Hybrids - Agridera</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/middle.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body class="tomato-page">
 
@@ -48,12 +51,12 @@
         </header>
 
     <div class="tomato-banner">
-        <img src="images/tomato-banner.jpg" alt="Tomatoes Banner">
+            <img src="img/cabbage-banner.jpg" alt="Cabbages Banner">
     </div>
 
     <main class="py-5">
         <div class="container">
-            <h1 class="page-title text-center text-md-left">Agridera Fresh Market Tomato Hybrids</h1>
+            <h1 class="page-title text-center text-md-left">Agridera Fresh Market Cabbages</h1>
             <img src="images/Union.svg" alt="Crosses" class="crosses-img mb-4 mx-auto mx-md-0">
 
             <p class="desc-text">Agridera aims to be one of the world's leading companies in the breeding, production, and marketing of tomato seeds. <b>We invest intensively in research and development to provide solutions to growers and consumers in numerous countries around the world.</b> In particular, we breed improved, disease-resistant cultivars adapted to different markets globally.</p>
@@ -96,88 +99,28 @@
         </div>
     </main>
 
-   <section class="product-grid-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="product-card text-center">
-                        <img src="images/tag1000.png" alt="TAG 1000">
-                        <div class="product-info">
-                            <h6 class="product-title">TAG 1000 (TAG 853)</h6>
-                            <p class="product-desc">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="product-card text-center">
-                        <img src="images/tag1001.png" alt="TAG 1001">
-                        <div class="product-info">
-                            <h6 class="product-title">TAG 1001 (TAG 855)</h6>
-                            <p class="product-desc">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="product-card text-center">
-                             <a href="tomato-one.html">
-                                <img src="images/tag1002.png" alt="TAG 1002">
-                            </a>                        
-                                <div class="product-info">
-                            <a href="tomato-one.html" style="text-decoration: none;">
-                                 <h4 class="product-title">TAG 1002 (TAG 809)</h4>
+   <div id="app"> <section class="product-grid-section">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-4 col-sm-6 mb-4" v-if="products" v-for="p in products" :key="p.id">
+                        <div class="product-card text-center">
+                            <a :href="'tomato-one.html#' + p.id">
+                                <img :src="'img/' + p.image" alt="Cabbage">
                             </a>
-                            <p class="product-desc">Tomato Determinate Red Standard Round</p>
+                            <div class="product-info">
+                                <a :href="'tomato-one.html#' + p.id" style="text-decoration: none;">
+                                     <h4 class="product-title">{{ p.title }}</h4>
+                                </a>
+                                <p class="product-desc">{{ p.short_text }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="product-card text-center">
-                        <img src="images/tag1003.png" alt="TAG 1003">
-                        <div class="product-info">
-                            <h6 class="product-title">TAG 1003 (TAG 834)</h6>
-                            <p class="product-desc">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="product-card text-center">
-                        <img src="images/tag1004.png" alt="TAG 1004">
-                        <div class="product-info">
-                            <h6 class="product-title">TAG 1004 (TAG 848)</h6>
-                            <p class="product-desc">Tomato Determinate Red BEEF Round</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="product-card no-image text-center">
-                        <img src="images/tag1005.png" alt="TAG 1005">
-                        <div class="product-info">
-                            <h6 class="product-title">TAG 1005 (TAG 890)</h6>
-                            <p class="product-desc">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="product-card text-center">
-                        <img src="images/tag1006.png" alt="TAG 1006">
-                        <div class="product-info">
-                            <h6 class="product-title">TAG 1006 (TAG 898)</h6>
-                            <p class="product-desc">Tomato Determinate Red Elongated</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-4">
-                    <div class="product-card text-center">
-                        <img src="images/tag1007.png" alt="TAG 1007">
-                        <div class="product-info">
-                            <h6 class="product-title">TAG 1007 (TAG 816)</h6>
-                            <p class="product-desc">Tomato Determinate Red Elongated</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer class="footer-section">
         <div class="footer-top py-4">

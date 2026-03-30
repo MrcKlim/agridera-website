@@ -77,6 +77,16 @@
     }
 
     .tomato-banner img, .contact-banner { height: 180px !important; }
+
+    .product-details-main .row > [class*="col-"] {
+        margin-bottom: 8px;
+    }
+
+    .product-details-main .d-flex.justify-content-end {
+        justify-content: flex-start !important;
+        margin-bottom: 16px !important;
+    }
+
 }
 
 @media (max-width: 640px) {
